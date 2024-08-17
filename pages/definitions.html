@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/images/faviconblue.png">
+    <title>Definitions</title>
+
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/defpage.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <div class="navbar-container" id="definitions-navbar"></div>
+    </header>
+
+    <div class="all-wrapper" id="term-choice-page">
+        <div class="intro-def">
+            <h1>Explore Key Finance Terms</h1>
+            <p></p>
+        </div>
+
+
+
+        <div class="cards-container">
+            <div class="card" id="personal-finance">
+                <a href="#" id="choose-personal-finance">
+                    <div class="category">Personal Finance-Focused</div>
+                    <img src="/assets/images/personalfintermscardimgtest2.jpg" alt="money and wallet">
+                    <h2 class="title">Personal Finance Terms</h2>
+                    <div class="desc">Learn about personal finance concepts like 
+                         credit, <br> taxes, and compound interest <br> <ion-icon size="large" name="arrow-forward-outline"></ion-icon></div>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <a href="#" id="choose-investing">
+                    <div class="category">Investing-Focused</div>
+                    <img src="/assets/images/invtermcardimgtest2.jpg" alt="stock tickers">
+                    <h2 class="title">Investing Terms</h2>
+                    <div class="desc">Learn about investing concepts like risk/reward,
+                         financial statements, and fundamental analysis <br> <ion-icon size="large" name="arrow-forward-outline"></ion-icon></div>
+                </a>
+            </div>
+
+        </div>
+
+
+    </div> <!--end of wrapper-->
+
+
+
+    <div class="definition-chosen" id="pf-focus-definitions">
+
+        <button class="btn" id="pf-backto-def">Back to Definitions Menu</button>
+
+        <h1>Personal Finance Terms</h1>
+        <div class="pf-term-list" id="term-list-A">
+            <div class="pf-foundation-terms">
+                <ul id="pf-ul-broad">
+                    <li>
+                        <span class="caret" id="pf-span-title">
+                            Foundational Concepts
+                        </span>
+                        
+                        <ul class="nested"> <!--This is everything nested in foundational concepts-->
+                            <li>
+                                <span class="caret">Credit</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            "The granting of money or something else 
+                                            of value in exchange for a promise of future repayment."
+                                            - <a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=C" class="def_source" target="_blank">St. Louis Federal Reserve Glossary</a>
+                                        </li>
+                                    </ul>
+                            </li>
+    
+                            <li>
+                                <span class="caret">Creditor</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            "A person, financial institution, or other business that lends money."
+                                            - <a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=C" class="def_source" target="_blank">St. Louis Federal Reserve Glossary</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Credit Report</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            "A loan and bill payment history kept by a credit bureau [such as Equifax, Experian, or TransUnion] 
+                                            and used by financial institutions and other potential creditors 
+                                            to determine the likelihood that a future debt will be repaid."
+                                            - <a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=C" class="def_source" target="_blank">St. Louis Federal Reserve Glossary</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Credit Score</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “A credit score is a prediction of your credit behavior, 
+                                            such as how likely you are to pay a loan back on time, 
+                                            based on information from your credit reports.”  
+                                            - <a href="https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-score-en-315" class="def_source" target="_blank">consumerfinance.gov</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Overdraft</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “An overdraft occurs when you don't have enough money in your account to cover a transaction, 
+                                            but the bank pays the transaction anyway.“ <br> - <a href="https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/glossary/#o" class="def_source" target="_blank">consumerfinance.gov</a>
+                                            <br>
+                                            Unless you have “overdraft protection” as a feature of your account, there will often also be
+                                             a fee charged for the occurrence of an overdraft (assuming you’ve agreed to this fee ahead of time). 
+                                             - <a href="https://www.fdic.gov/resources/consumers/consumer-assistance-topics/deposit-accounts.html" class="def_source" target="_blank">fdic.gov</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Debits</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “Charges to or withdrawals from an account. 
+                                            In a bank account register, debits are subtracted from the balance.” 
+                                            - <br> <a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=D" class="def_source" target="_blank">St. Louis Federal Reserve Glossary</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Expenses</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “Expenses are dollars going out, usually to buy goods and services. <br>
+                                            <b>Recurring</b> expenses are expenses that you incur on a regular basis, usually on a set schedule (for instance, every year, month, or week). 
+                                            Recurring expenses can be fixed or variable.  <br>
+                                            <b>Fixed</b> expenses are expenses, like bills, that are paid on a set schedule and generally cost the same amount.”  
+                                            Examples include rent, car payments, and student loans. <br>
+                                            <b>Variable</b> (recurring) expenses are expenses that change in amount from one period to the next, such as month to month or week to week. Examples include utilities and groceries. “Non-recurring expenses occur without a schedule, often on a one-time or infrequent basis.”  
+                                            Examples include moving expenses or sign-up fees for a gym membership.   <br>
+                                            - <a href="https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/glossary/#f" class="def_source" target="_blank">consumerfinance.gov</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Savings</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “Money you have set aside in a secure place, 
+                                            such as in a bank account, that you can use for future emergencies or to make specific purchases.”  
+                                            <br> - <a href="https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/glossary/#s" class="def_source" target="_blank">consumerfinance.gov</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">High-Yield Savings or High-Yield Checking Account </span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            – An account that pays the customer a higher rate of interest (compared to a 
+                                            typical savings or checking account) and often requires the customer to meet certain conditions.  
+                                            <br> <a href="https://www.fdic.gov/regulations/examinations/supervisory/insights/siwin12/siwinter12-article2.pdf" class="def_source" target="_blank">More information about High-Yield Checking Accounts</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Budget</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “A budget is a  plan that outlines what money you expect to earn or receive (your income) and how you will 
+                                            save it or spend it (your expenses) for a given period of time; also called a spending plan.” 
+                                            <br> - <a href="https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/glossary/#b" class="def_source" target="_blank">consumerfinance.gov</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Income</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “Income is money earned or received such as wages or salaries, tips, commissions, contracted pay, 
+                                            government transfer payments, dividends on investments, tax refunds, gifts, and inheritances.” 
+                                            <br> - <a href="https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/glossary/#i" class="def_source" target="_blank">consumerfinance.gov</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Net vs. Gross Income</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “<b>Net income</b>  is the amount of money you receive
+                                             in your paycheck after taxes and other deductions are taken out; also called take-home pay.” 
+                                             <br> - <a href="https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/glossary/#n" class="def_source" target="_blank">consumerfinance.gov</a>
+                                             <br>
+                                             “ <b>Gross income</b> is total pay before taxes and other deductions are taken out.”
+                                             <br> - <a href="https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/glossary/#g" class="def_source" target="_blank">consumerfinance.gov</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Interest</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “Interest is a fee charged by a lender, and paid by a borrower, for the use of money. 
+                                            A bank or credit union may pay you interest if you deposit money in certain types of accounts.” 
+                                            <br> - <a href="https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/glossary/#i" class="def_source" target="_blank">consumerfinance.gov</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Compound Interest</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “When you earn interest 
+                                            on both the money you save and the interest you earn, that is called compound interest.” 
+                                            <br> - <a href="https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/glossary/#c" class="def_source" target="_blank">consumerfinance.gov</a>
+                                            
+                                            <br> <br> <a href="/pages/calculators.html" class="internal-link">See for Yourself</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+    
+            </div>
+
+            <div class="pf-tax-terms">
+                <ul id="pf-ul-broad">
+                    <li>
+                        <span class="caret" id="pf-span-title">
+                            Taxes
+                        </span>
+                        
+                        <ul class="nested"> <!--This is everything nested in foundational concepts-->
+                            <li>
+                                <span class="caret">Tax</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            A payment of money from citizens to federal, state or local government 
+                                            to fund essential public goods or services meant to benefit the community as a whole.  
+                                            <br> - <a href="https://apps.irs.gov/app/understandingTaxes/whys/thm01/les01/media/lp_thm01_les01.pdf" class="def_source" target="_blank">IRS Lesson 1</a>
+                                        </li>
+                                    </ul>
+                            </li>
+    
+                            <li>
+                                <span class="caret">Regressive Tax</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            A tax, such as an excise tax (on the sale or use of specific products or transactions) 
+                                            or a tariff (on the importation of specific goods), 
+                                            which takes a larger percentage of the income of lower-income groups than of higher-income groups.  
+                                            <br> - <a href="https://apps.irs.gov/app/understandingTaxes/whys/thm02/les01/media/lp_thm02_les01.pdf" class="def_source" target="_blank">IRS Lesson 1</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Progressive Tax</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            A tax (such as an income tax employing graduated rates which increase with income leve) 
+                                            which takes a larger percentage of the income of higher-income groups than of lower-income groups. 
+                                            <br> - <a href="https://apps.irs.gov/app/understandingTaxes/whys/thm03/les03/media/is1_thm03_les03.pdf" class="def_source" target="_blank">IRS Lesson 3</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Income Taxes</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “Taxes on income, both earned (salaries, wages, tips, commissions) and unearned (interest, dividends). 
+                                             Income taxes can be levied 
+                                            on both individuals (personal income taxes) and businesses (business and corporate income taxes).”  
+                                            <br> - <a href="https://apps.irs.gov/app/understandingTaxes/student/glossary.jsp#incometaxes" class="def_source" target="_blank">IRS Glossary</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Property Taxes</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            – “Taxes on property, especially real estate, but also can be on boats, automobiles 
+                                            (often paid along with license fees), recreational vehicles, and business inventories.” 
+                                            <br> - <a href="https://apps.irs.gov/app/understandingTaxes/student/glossary.jsp#P" class="def_source" target="_blank">IRS Glossary</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Tax Credits, Deductions, and Exemptions</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            A <b>tax deduction</b> is an amount (often a personal or business expense)
+                                             that reduces income subject to tax. 
+                                             <br>
+                                             <br>
+                                            A <b>tax exemption</b> is a part of a person's income on which no tax is imposed.
+                                            <br>
+                                            <br>
+                                            A <b>tax credit</b> is a dollar-for-dollar reduction in the tax that can be deducted directly from taxes owed.
+                                            <br>
+                                            <br> (<a href="https://apps.irs.gov/app/understandingTaxes/student/glossary.jsp#T" class="def_source" target="_blank">IRS Glossary</a>)
+                                            <br>
+                                            <br>
+                                            “Tax deductions [such as for charitable contributions], 
+                                            exemptions [such as for children], and tax credits 
+                                            [such as for purchases of energy-efficient equipment] may lower tax liability. The government allows this special tax treatment 
+                                            to support or encourage behaviors, spending patterns, and lifestyles considered desirable.” 
+                                            <br> - <a href="https://apps.irs.gov/app/understandingTaxes/student/whys_thm04_les03.jsp" class="def_source" target="_blank">IRS Lesson 3</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pf-tax-terms">
+                <ul id="pf-ul-broad">
+                    <li>
+                        <span class="caret" id="pf-span-title">
+                            Debt
+                        </span>
+                        
+                        <ul class="nested"> <!--This is everything nested in foundational concepts-->
+                            <li>
+                                <span class="caret">Debt</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “Money owed in exchange for loans or for goods 
+                                            or services purchased with credit.” 
+                                            <br> - <a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=D" class="def_source" target="_blank">St.Louis Federal Reserve</a>
+                                        </li>
+                                    </ul>
+                            </li>
+    
+                            <li>
+                                <span class="caret">Loan</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “A sum of money provided temporarily 
+                                            on the condition that the amount borrowed be repaid, usually with interest.” 
+                                            <br> - <a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=L" class="def_source" target="_blank">St.Louis Federal Reserve</a>
+                            
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Mortgage</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “A loan for the purchase of a home or real estate.”  
+                                            <br> - <a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=M" class="def_source" target="_blank">St.Louis Federal Reserve</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Interest</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “The price of using someone else's money,” with the interest rate either 
+                                            fixed (not changing during the borrowing term) or variable (fluctuating over the borrowing term).
+                                            <br> - <a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=I" class="def_source" target="_blank">St.Louis Federal Reserve</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Debt-to-Income Ratio</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            “Your debt-to-income ratio (DTI) is all your monthly debt payments divided by your gross monthly income.
+                                            This number is one way 
+                                            lenders measure your ability to manage the monthly payments to repay the money you plan to borrow.”
+                                            <br> <a href="https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/" class="def_source" target="_blank">consumerfinance.gov</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pf-tax-terms">
+                <ul id="pf-ul-broad">
+                    <li>
+                        <span class="caret" id="pf-span-title">
+                            Retirement
+                        </span>
+                        
+                        <ul class="nested"> <!--This is everything nested in foundational concepts-->
+                            <li>
+                                <span class="caret">Defined Benefit vs. Defined Contribution Plans</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            A <b>defined benefit plan</b> (such as a traditional pension plan) provides a set monthly benefit at retirement, 
+                                            while in contrast a <b>defined contribution plan</b> (such as a 401(k) plan) provides no set benefit but rather invests the contributions made to the plan (whether by the employee or the employer, or both)
+                                             with the ultimate benefit level depending on such investment results over time. 
+                                             <br>  - <a href="https://www.dol.gov/general/topic/retirement/typesofplans" class="def_source" target="_blank">U.S. Department of Labor</a>
+                                             <br>
+                                             <br>
+                                             In either type, 
+                                             distributions from the plan are included in taxable income 
+                                             (unless an exception applies, such as a <b>Roth account</b> – see below), 
+                                             with both contributions and earnings being <u>tax-deferred until withdrawal</u>. 
+                                             
+                                             <br> - <a href="https://www.irs.gov/retirement-plans/401k-plans" class="def_source" target="_blank">IRS</a>
+
+                                        </li>
+                                    </ul>
+                            </li>
+    
+                            <li>
+                                <span class="caret">Individual Retirement Arrangments (IRAs)</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            A set of options allowing employees to make contributions to retirement accounts, 
+                                            with contributions either <u>tax-deductible</u> (with taxes deferred until withdrawals are made, such as with traditional IRAs) 
+                                            or <u>not tax-deductible</u> but with eventual withdrawals not included in taxable income (such as with <b>Roth IRAs</b>). 
+                                            <br> - <a href="https://www.irs.gov/retirement-plans/individual-retirement-arrangements-iras" class="def_source" target="_blank">IRS</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Roth IRAs and Roth 401(k) Plans </span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            Accounts or plans for which contributions are made on 
+                                            an after-tax basis (not tax-deductible) but with withdrawals generally not included in taxable income. 
+                                            <br> - <a href="https://www.irs.gov/retirement-plans/individual-retirement-arrangements-iras" class="def_source" target="_blank">IRS (more about ROTH IRAs)</a>/ <a href="https://www.irs.gov/retirement-plans/401k-plans" class="def_source" target="_blank"> IRS (more about ROTH 401(k))</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Health Savings Account (HSA)</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            An account into which an employee makes contributions on a pre-tax basis (excluded from current income)
+                                             with withdrawals used to pay qualified healthcare expenses likewise not taxed.  
+                                             <br> - <a href="https://www.irs.gov/pub/irs-pdf/p969.pdf" class="def_source" target="_blank">IRS</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Medicare</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            Federal health insurance for people at least 65 years old 
+                                            (and partially free for those who qualify for Social Security).
+                                            <br> - <a href="https://www.medicare.gov/basics/get-started-with-medicare" class="def_source" target="_blank">medicare.gov</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                            <li>
+                                <span class="caret">Social Security</span>
+    
+                                    <ul class="nested">
+                                        <li>
+                                            – Federal retirement system which pays monthly benefit if a taxpayer 
+                                            is at least 62 years old and has paid in to social security for at least 10 years of work.  
+                                            <br> - <a href="https://www.ssa.gov/retirement/eligibility" class="def_source" target="_blank">ssa.gov</a>
+                                        </li>
+                                    </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+      
+
+            
+        </div>
+      
+        
+
+
+
+
+
+
+
+    </div> <!--end of personal finance terms container-->
+
+    <div class="definition-chosen" id="inv-focus-definitions">
+        <button class="btn" id="inv-backto-def">Back to Definitions Menu</button>
+        <h1>Investing Terms</h1>
+            <div class="inv-term-list">
+                <div class="pf-term-list">
+                    <div class="pf-foundation-terms">
+                        <ul id="pf-ul-broad">
+                            <li>
+                                <span class="caret" id="pf-span-title">
+                                    Foundational Concepts
+                                </span>
+                                
+                                <ul class="nested"> <!--This is everything nested in foundational concepts-->
+                                    <li>
+                                        <span class="caret">Capital</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    Includes physical capital (capital goods such as buildings, tools or equipment), financial capital (assets or money, such as currency, debt or equity),
+                                                     and human capital (humans capable of work, including their accumulated knowledge and abilities).  
+                                                    <br> - <a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=C" class="def_source" target="_blank">St.Louis Federal Reserve</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+            
+                                    <li>
+                                        <span class="caret">Appreciation</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    An increase in value of any asset.  
+                                                    <br> - <a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=A" class="def_source" target="_blank">St.Louis Federal Reserve</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Depreciation</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    A decrease in value of any asset.  
+                                                    <br> <a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=D " class="def_source" target="_blank">(St.Louis Federal Reserve)</a>
+                                                    <br><br><u>Depreciation in the context of taxes</u> refers to the recovery of the cost of property used for business or investment (not personal) purposes over a 
+                                                    number of years by deducting a portion of its cost from taxable income each period.  Eligible property excludes land and certain intangibles but includes tangible property 
+                                                    such as buildings, equipment and machinery, vehicles, furniture, etc., with each type of 
+                                                    property depreciable according to specified predetermined schedule covering its assumed useful life.  
+                                                    <br> -<a href="https://www.irs.gov/taxtopics/tc704" class="def_source" target="_blank">IRS</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Capital Gain/Loss</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    A <b>capital gain</b> is the profit that comes from selling an investment for more than you paid for it.
+                                                    <br> A <b>capital loss</b> is the loss that comes from selling an investment for less than you paid for it.
+                                                    <br> - <a href="https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/glossary/#c" class="def_source" target="_blank">consumerfinance.gov</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Short-Term vs Long-Term Capital Gains/losses</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    “ Generally, if you hold the asset for more than one year before you dispose of it, 
+                                                    your capital gain or loss is <b>long-term</b>. If you hold it one year or less, 
+                                                    your capital gain or loss is <b>short-term</b>.” 
+                                                    <br> -<a href="https://www.irs.gov/taxtopics/tc409" class="def_source" target="_blank">IRS</a>
+                                                    <br>
+                                                     Short-term capital gains are generally taxed at <u>higher rates</u> than long-term capital gains, 
+                                                     making it advantageous (all else equal) to hold assets for more than one year, if possible.  
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Bond</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    "A certificate of indebtedness issued by a government or a corporation."
+                                                    <br> -<a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=B" class="def_source" target="_blank">St.Louis Federal Reserve</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Treasury Bills, Notes, and Bonds</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    Debt securities issued by the US government with (respectively) a maturity (when issued) 
+                                                    of one year or less (for a <b>bill</b>), 
+                                                    of more than one year but not more than ten years (for a <b>note</b>), or of more than ten years (for a <b>bond</b>). 
+                                                    <br> -<a href="https://www.stlouisfed.org/education/glossary#sr_glossary%20index=T" class="def_source" target="_blank">St.Louis Federal Reserve</a> 
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Stock, Common Stock, or Common Share</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    “Common stock is a type of security that represents an ownership interest—or equity—in a company.   
+                                                    Holders of common stock have rights that typically include the right to vote to elect members to a 
+                                                    company’s board of directors and to vote on certain corporate actions (such as takeover bids), 
+                                                    and <u>may have rights to dividend payments </u> based on the company’s profits.  
+                                                    While common stockholders may have authority to exercise some control over the company through voting, 
+                                                    they are typically <u>last in the liquidation preference</u>. For example, if the company is sold, common stockholders usually have rights 
+                                                    to the company’s assets only after debtholders and preferred stockholders have been paid in full.”  
+                                                    <br> -<a href="https://www.sec.gov/resources-small-businesses/cutting-through-jargon-z#S" class="def_source" target="_blank">SEC</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Stock Market</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    “A general term for the organized 
+                                                    trading of stocks through exchanges, over-the-counter, and computerized trading venues.”  
+                                                    <br> -<a href="https://www.investor.gov/introduction-investing/investing-basics/glossary/s" class="def_source" target="_blank">investor.gov</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Mutual Fund</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    “A mutual fund is a company that pools money from many investors and invests the 
+                                                    money in securities such as stocks, bonds, and short-term debt. The combined holdings of the mutual
+                                                     fund are known as its portfolio. Investors buy shares in mutual funds. 
+                                                    Each share represents an investor’s part ownership in the fund and the income it generates.”  
+                                                    <br> -<a href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1" class="def_source" target="_blank">investor.gov</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Exchange-Traded Fund (ETF)</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    “Exchange-traded funds (ETFs) are SEC-registered investment companies.” 
+                                                    <br> -<a href="https://www.investor.gov/introduction-investing/investing-basics/glossary/e" class="def_source" target="_blank">investor.gov</a>
+                                                    <br>
+                                                    <br>
+                                                    “Like mutual funds, ETFs offer investors a way to pool their money in a fund that makes 
+                                                    investments in stocks, bonds, or other assets and, in return, to receive an interest in that 
+                                                    investment pool.  Unlike mutual funds, however, ETF shares are traded on a national stock exchange 
+                                                    and at market prices that may or may not be the same as the <u>net asset value (“NAV”)</u> of the shares,
+                                                     that is, the value of the ETF’s assets minus its liabilities divided by the number of shares outstanding.”
+                                                    <br> -<a href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-2" class="def_source" target="_blank">investor.gov</a>  
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Dividend</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    “A portion of a company's profit paid to shareholders.”  
+                                                    <br> -<a href="https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/glossary/#s" class="def_source" target="_blank">consumerfinance.gov</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Broker vs. Dealer</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    “A <b>broker</b> is any person engaged in the business of buying or selling securities for the account of others. 
+                                                    A <b>dealer</b> is any person engaged in the business of buying or selling securities, but for their own account. 
+                                                    Identifying when a person is 
+                                                    acting as a broker or a dealer is important because generally broker-dealers must register with the SEC.” 
+                                                    <br> -<a href="https://www.sec.gov/files/oasb-broker-dealer-building-block.pdf" class="def_source" target="_blank">SEC</a> 
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Diversification</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    “Diversification is an investment strategy to reduce the impact of any single loss by 
+                                                    allocating investments across multiple asset classes, categories, [sectors] or companies.  
+                                                    Investors in early-stage companies often use 
+                                                    portfolio diversification, whether through pooled investment vehicles or as an individual angel investor.”
+                                                    <br> -<a href="https://www.sec.gov/resources-small-businesses/cutting-through-jargon-z#D" class="def_source" target="_blank">SEC</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+            
+                    </div>
+        
+                    <div class="pf-tax-terms">
+                        <ul id="pf-ul-broad">
+                            <li>
+                                <span class="caret" id="pf-span-title">
+                                    Financial Statements
+                                </span>
+                                
+                                <ul class="nested"> <!--This is everything nested in foundational concepts-->
+
+                                    <li>The four main financial statements are the <u>balance sheet</u>, the <u>income statement</u>, <br> 
+                                        the <u>cash flow statment</u>, and the statement of owner's equity.</li>
+                                    <li>
+                                        <span class="caret">Balance Sheet</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    The balance sheet shows a company’s assets, liabilities, and 
+                                                    shareholder’s equity at a specific point in time (e.g. the end of a quarter).  
+                                                    <br> -<a href="https://www.sec.gov/about/reports-publications/beginners-guide-financial-statements" class="def_source" target="_blank">SEC</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+            
+                                    <li>
+                                        <span class="caret">Income Statement</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    The income statement includes a company’s revenue, expenses and net income (profit) for the period (e.g. quarterly). 
+                                                    <br> -<a href="https://www.sec.gov/about/reports-publications/beginners-guide-financial-statements" class="def_source" target="_blank">SEC</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Cash Flow Statement</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    The cash flow statement measures how cash 
+                                                    flows in and out during the period. It assesses cash flows from operating, investing, and financing activities. 
+                                                    <br> -<a href="https://www.sec.gov/about/reports-publications/beginners-guide-financial-statements" class="def_source" target="_blank">SEC</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Assets</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    “Assets are things that a company owns that have value. This 
+                                                    typically means they can either be sold or used by the company to make products or provide services that can be sold.”
+                                                    <br>
+                                                    Examples of assets include
+                                                     physical property, such as factories and inventory, as well as cash and intellectual property such as trademarks. 
+                                                     <br> <a href="https://www.sec.gov/about/reports-publications/beginners-guide-financial-statements" class="def_source" target="_blank">SEC</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Liabilities</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    “Amounts of money that a company owes to others. This can include all kinds of obligations, like money borrowed from a
+                                                     bank to launch a new product, rent for use of a building, money owed to suppliers 
+                                                    for materials, payroll a company owes to its employees, environmental cleanup costs, or taxes owed to the government.”
+                                                    <br> -<a href="https://www.sec.gov/about/reports-publications/beginners-guide-financial-statements" class="def_source" target="_blank">SEC</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Shareholder's Equity</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    “The money that would be left if a company sold all of its assets and paid off all of its liabilities. 
+                                                    This leftover money belongs to the shareholders, or the owners, of the company.”
+                                                    <br> -<a href="https://www.sec.gov/about/reports-publications/beginners-guide-financial-statements" class="def_source" target="_blank">SEC</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="pf-tax-terms">
+                        <ul id="pf-ul-broad">
+                            <li>
+                                <span class="caret" id="pf-span-title">
+                                    Fundamentals and Fundamental Analysis
+                                </span>
+                                
+                                <ul class="nested"> <!--This is everything nested in foundational concepts-->
+                                    <li>
+                                        <span class="caret">Profit</span>
+            
+                                            <ul class="nested">
+                                                <li style="line-height: 1.4;">
+                                                    Profit is the earnings remaining after subtracting a company's expenses from its revenue. 
+                                                    <br>
+                                                    <b>Gross profit</b> is calcuated by subtracting the cost of goods sold (COGS) from revenue. 
+                                                    <br>
+                                                    <b>Operating profit</b> is calculated by subtracting operating expenses, depreciation, and amortization from <u>gross profit</u>.
+                                                    <br>
+                                                    <b>Net Profit</b> is calculated by adding other income to, and subtracting taxes, interest, and other expenses from, <u>operating profit</u>. 
+                                                </li>
+                                            </ul>
+                                    </li>
+            
+                                    <li>
+                                        <span class="caret">Price-Earnings (P/E) Ratio</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    A company's P/E ratio is a way of gauging whether the stock price is high or low compared to the past or to other companies. 
+                                                    The ratio is calculated by dividing the current stock price by the current earnings per share.
+                                                    <br>
+                                                    -<a href="https://www.investor.gov/introduction-investing/investing-basics/glossary/price-earnings-pe-ratio#" class="def_source" target="_blank">investor.gov</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Enterprise Value</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    Enterprise value is the total value of a company, incorporating both equity and debt. It is calculated by adding its 
+                                                    <u>market capitalization (total value of a company's equity; share price x number of shares outstanding)</u> and total debt, then subtracting cash and cash equivalents. 
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    
+
+                                    <li>
+                                        <span class="caret">Current Ratio</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    The current ratio is calculated by dividing a company's current assets by its current liabilities. 
+                                                    It measures a company's ability to meet its short-term obligations. 
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Quick Ratio</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    The quick ratio is calculated by dividing quick assets (cash and cash equivalents + marketable securities + accounts receivable)
+                                                    by current liabilities. Like the current ratio, it measures a company's ability to meet short-term obligations (current liabilities), but using more liquid assets
+                                                    (assets that more quickly convert to cash). 
+                                                </li>
+                                            </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="pf-tax-terms">
+                        <ul id="pf-ul-broad">
+                            <li>
+                                <span class="caret" id="pf-span-title">
+                                    Other Metrics and Technical Analysis
+                                </span>
+                                
+                                <ul class="nested"> <!--This is everything nested in foundational concepts-->
+                                    <li>
+                                        <span class="caret">Volatility</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    Volatility is the degree of fluctuation or variation in a stock price. A stock with lower volatility
+                                                    has more stable prices while a stock with higher volatility tends to have larger price swings.
+                                                </li>
+                                            </ul>
+                                    </li>
+            
+                                    <li>
+                                        <span class="caret">Rate of Return (RoR)</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    An investment's rate of return is the percentage change in the its value over a given period (e.g. annual, monthly). 
+                                                    For example, an initial investment of $100 worth $105 after 1 year had an annual rate of return of 5% for this year.  
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Sharpe Ratio</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    The Sharpe Ratio is used to measure the excess return  
+                                                    an investor receives for holding a riskier (more volatile) asset compared to a risk-free asset, such as 1-year treasury bills. 
+                                                    <br> 
+                                                    A Sharpe ratio of 1.0 or above is considered good, indicating that the investment is generating strong excess returns relative to the risk. 
+                                                    A Sharpe ratio below 1.0 suggests that the investment is generating smaller excess returns relative to the risk.
+                                                   
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Beta</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    Beta is a measure of how volatile a stock is compared to a benchmark index (e.g. the S&P500). A stock
+                                                    with a beta of 1 moves 100 percent for every 100 percent move in the benchmark index, meaning it has
+                                                    similar volatility, or risk, as the benchmark. A stock with a beta above 1 tends to be more volatile than the
+                                                    benchmark index, and vice versa for stocks with beta less than 1. 
+                                                    <br> -<a href="https://www.finra.org/investors/investing/investing-basics/volatility" class="def_source" target="_blank">finra.org</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <span class="caret">Simple Moving Average</span>
+            
+                                            <ul class="nested">
+                                                <li>
+                                                    The simple moving average is calculated by adding the closing prices of a stock over a given number of periods
+                                                    and dividing this sum by the number of periods. For example, to find the 100-day simple moving average for a stock, 
+                                                    the sum of its closing prices for the last 100 days is divided by the number of days (100). 
+                                                    <br>
+                                                    Moving averages, such as the simple moving average, help smooth out short-term
+                                                    fluctuations and indicate underlying trends (e.g. upward). 
+                                                </li>
+                                            </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+            </div>
+        
+
+
+
+
+
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/babel" src="/assets/js/navbar.js"></script>
+
+ <!--<script src="/assets/js/treelist.js"></script>-->
+    <script src="/assets/js/definitionpage.js"></script>
+</body>
+</html>

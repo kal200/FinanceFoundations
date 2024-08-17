@@ -1,0 +1,257 @@
+:root{
+    --maincolor: #64bcf4;
+    --hovercolor: #5bacdf;
+    --backgroundcolor: #f1f8fc;
+    --buttontextcolor: #bee6ff;
+    --linkandtextcolor: #074368; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Aldrich', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--backgroundcolor);
+    margin-bottom: 5%;
+}
+
+.header-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.left{
+    border-radius: 20px;
+    margin-top: 120px;
+  
+   
+   
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.quizdiv img{
+    animation: appear linear;
+    animation-duration: 0.6s;
+}
+
+#quiz-navbar{
+    margin: 15px 0px 0px 0px;
+    padding-bottom: 0px;
+  }
+  
+
+.app{
+    background-color: #ffffff;
+    width: 90%;   /*90% of the width of its container element (in this case the body)*/
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    display: block ;
+}
+
+.app h1{
+    color: var(--linkandtextcolor);
+    border-bottom: 1px solid #074368;
+    padding-bottom: 5px;
+}
+
+.quiz{
+    padding: 20px 0px;
+    min-height: 60vh;
+    
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: var(--linkandtextcolor);
+}
+
+#quiz-btn{
+    background-color: aliceblue;
+    color: var(--linkandtextcolor);
+    width: 100%;  /* Of its parent, which is the div with the id "answer-buttons" */
+    border: 1px solid var(--buttontextcolor);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+#quiz-btn:hover:not(:disabled){
+    /* Lighter: background-color: rgb(226, 240, 252);*/
+    background-color: var(--linkandtextcolor);
+    color: var(--buttontextcolor);
+}
+
+.quiz-choice-btn{
+    background-color: #64bcf4;
+    color: var(--linkandtextcolor);
+    width: auto;  
+    border: 1px solid var(--buttontextcolor);
+    padding: 4px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.quiz-choice-btn:hover{
+    background-color: rgb(223, 239, 252);
+}
+
+#next-btn{
+    background-color: aliceblue;
+    color: var(--linkandtextcolor);
+    width: 150px;
+    border: 1px solid var(--buttontextcolor);
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+#exit-btn{
+    background-color: aliceblue;
+    color: var(--linkandtextcolor);
+    width: 150px;
+    border: 1px solid var(--buttontextcolor);
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+#exit-btn:hover{
+    background-color: var(--linkandtextcolor);
+    color: var(--buttontextcolor);
+}
+
+#restart-btn:hover{
+    background-color: var(--linkandtextcolor);
+    color: var(--buttontextcolor);
+}
+
+#restart-btn{
+    background-color: aliceblue;
+    color: var(--linkandtextcolor);
+    width: 150px;
+    border: 1px solid var(--buttontextcolor);
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+#ext-rstrt{
+    margin-bottom: 10%;
+}
+
+#next-btn:hover{
+    background-color: var(--linkandtextcolor);
+    color: var(--buttontextcolor);
+    
+}
+
+.correct-answer{
+    background: rgba(160, 219, 160, 0.781) !important;
+}
+
+.wrong-answer{
+    background: rgba(217, 139, 139, 0.692) !important;
+}
+
+.header-container{
+    color: var(--linkandtextcolor);
+    line-height: 40px;
+    margin-left: 5%;
+    
+}
+
+#quiz-menu-head{
+    margin-left: 1%
+}
+
+ul{
+    list-style-type: none;
+}
+
+.caret{
+    cursor: pointer;
+    user-select: none;
+    color: var(--linkandtextcolor);
+}
+
+.caret:hover::after{
+    color: var(--hovercolor);
+}
+
+.caret::after{
+    content: '\25BC';
+    color: var(--linkandtextcolor);
+    margin-right: 6px;
+    transition: transform 0.3s ease;
+
+}
+
+.caret-down::after{
+    display: inline-block;
+    transform: rotate(270deg); 
+}
+
+
+
+.nested{
+    display: none;
+    font-size: medium;
+    font-weight: 600;
+    color: #2a6184;
+}
+
+.active{
+    display: block;
+}
+
+.quiz-options{
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+.completion-messages{
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px;
+    line-height: 30px;
+    color: var(--linkandtextcolor);
+    
+}
+
+#score-message{
+    margin-top: 3%;
+}
+
+

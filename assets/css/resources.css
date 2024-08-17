@@ -1,0 +1,41 @@
+:root{
+    --maincolor: #64bcf4;
+    --hovercolor: #5bacdf;
+    --backgroundcolor: #f1f8fc;
+    --buttontextcolor: #bee6ff;
+    --linkandtextcolor: #074368; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Aldrich', sans-serif;
+    box-sizing: border-box;
+}
+
+#resources-navbar{
+    margin: 15px 0px 0px 0px;
+    padding-bottom: 0px;
+      
+}
+
+body{
+    background-color: var(--backgroundcolor);
+}
+
+li{
+    font-size: large;
+    padding-bottom: 8px;
+    color: var(--linkandtextcolor);
+}
+
+h2{
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+a{
+    color: var(--linkandtextcolor);
+}
+

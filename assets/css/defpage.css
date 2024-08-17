@@ -1,0 +1,260 @@
+:root{
+    --maincolor: #64bcf4;
+    --hovercolor: #5bacdf;
+    --backgroundcolor: #f1f8fc;
+    --buttontextcolor: #bee6ff;
+    --linkandtextcolor: #074368; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Aldrich', sans-serif;
+    box-sizing: border-box;
+}
+
+#definitions-navbar{
+    margin: 15px 0px 5px 0px;
+    padding-bottom: 0px;
+      
+}
+
+body{
+    background-color: var(--backgroundcolor);
+}
+
+.all-wrapper{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.intro-def{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: left;
+    margin-left: -16%;
+
+    padding-top: 30px;
+    padding-bottom: 50px; 
+    color: var(--linkandtextcolor);
+    
+}
+
+.intro-def h1{
+    
+    padding-bottom: 10px;
+   
+}
+
+.intro-def p{
+    max-width: 80%;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.cards-container .card{
+    width: 500px;
+    
+    background-color: aliceblue;
+    font-family: 'Aldrich', sans-serif;
+    padding: 16px;
+    box-shadow: 0 9px 17px -6px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+}
+
+.cards-container .card:hover{
+    transform: scale(1.03);
+    transition: all 400ms ease;
+}
+
+.cards-container a{
+    text-decoration: none;
+    color: var(--linkandtextcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.cards-container .card img{
+    margin: -16px;
+   
+    object-fit: cover;
+}
+
+.cards-container .card .category{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #99d8ff;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.cards-container .card h2.title {
+    font-size: 20px;
+    margin: 28px 0 10px 0;
+    line-height: 1.4;
+}
+
+.cards-container,
+.cards-container * {
+    box-sizing: border-box;
+    margin-bottom: 5%;
+}
+
+.cards-container .card .desc{
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+   
+
+}
+
+.cards-container .card #personal-finance{
+    margin-left: 5%;
+}
+
+.definition-chosen{
+    display: none;
+}
+
+.def_source{
+    color: #2a678c;
+    font-weight: bolder;
+    
+}
+
+.def_source:hover{
+    color: #5bacdfcb;
+}
+
+.internal-link{
+    color: #29526c;
+    background-color: var(--maincolor);
+    border-radius: 10px;
+    padding: 4px 5px;
+    font-weight: bold;
+}
+
+.internal-link:hover{
+    background-color: #97ccec;
+}
+
+.definition-chosen h1{
+    color: var(--linkandtextcolor);
+}
+
+.caret{
+    cursor: pointer;
+    user-select: none;
+    color: var(--linkandtextcolor);
+}
+
+.caret:hover::after{
+    color: var(--hovercolor);
+}
+
+.caret::after{
+    content: '\25BC';
+    color: var(--linkandtextcolor);
+    margin-right: 6px;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+  
+
+}
+
+.caret-down::after{
+    display: inline-block;
+    transform: rotate(270deg); 
+}
+
+
+
+.nested{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+#inv-backto-def, 
+#pf-backto-def{
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    margin-left: 70% !important;
+}
+
+
+#inv-backto-def:hover, 
+#pf-backto-def:hover{
+    background-color: #2f6b91;
+}
+
+#inv-backto-def:active, 
+#pf-backto-def:active{
+    background-color: #376f91;
+}
+
+.not-current{
+    display: none;
+}
+
+#pf-span-title{
+    font-size: 25px;
+}
+
+
+
+ul{
+    list-style-type: none;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 2.4%;
+   
+}
+
+.definition-chosen h1{
+    margin-left: 4%;
+    margin-bottom: 1.5%;
+    background-color: var(--buttontextcolor);
+    border-radius: 4px;
+    padding: 5px 5px;
+}
+
+.definition-chosen .nested li{
+    margin-left: -3%;
+    margin-top: 1.2%;
+    margin-bottom: 2%;
+    /*background-color: red;*/
+    line-height: 1.3;
+    max-width: 97%;
+}
+
+span{
+    /*background-color: #9cd5f8;*/
+
+    background-color: #a3cff8;
+  
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+
+
+
+
+
+

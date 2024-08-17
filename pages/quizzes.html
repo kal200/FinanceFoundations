@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/images/faviconblue.png">
+    <title>Quizzes</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/quizstyles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+   
+
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+  
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="navbar-container" id="quiz-navbar"></div>
+    </header>
+
+
+   
+    
+      <div class="header-container">
+            <div class="right">
+                <br><br>
+                <h1>Test Your Knowledge!</h1> <br><br>
+                <h1 id="quiz-menu-head"><ion-icon name="create-outline"></ion-icon>  Choose Quiz</h1>
+
+            
+                <div class="quiz-options">
+                <ul class="perfin">
+                    <li>
+                        <h2>
+                            <span class="caret">
+                                <ion-icon name="wallet-outline"></ion-icon>
+                                Personal Finance
+                            </span>
+                        </h2>
+
+                        <ul class="nested">
+                            <li>Personal Finance Terms 
+                                <a href="#land-point"><button class="quiz-choice-btn" id="pfterms">Take Quiz</button></a>
+                            </li>
+                            <li>Personal Finance Math
+                                <a href="#land-point"><button class="quiz-choice-btn" id="pfmath">Take Quiz</button></a>
+                            </li>
+                            <li>Personal Finance Decision-Making
+                                <a href="#land-point"><button class="quiz-choice-btn" id="pfdecision">Take Quiz</button></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+            
+                <!--Close-->
+
+                <div class="quiz-options">
+                    <ul class="invfin">
+                    <li>
+                        <h2>
+                            <span class="caret">
+                                <ion-icon name="analytics-outline"></ion-icon>
+                                Investing
+                            </span>
+                        </h2>
+        
+                        <ul class="nested">
+                            <li>Investing Terms
+                                <a href="#land-point"><button class="quiz-choice-btn" id="invterms">Take Quiz</button></a>
+                            </li>
+                            <li>Investing Math
+                                <a href="#land-point"><button class="quiz-choice-btn" id="invmath">Take Quiz</button></a>
+                            </li>
+                            <li>Investment Decision-Making
+                                <a href="#land-point"><button class="quiz-choice-btn" id="invdecision">Take Quiz</button></a>
+                            </li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+                <!--close-->
+
+                <div class="left">
+                    <div class="quizdiv">
+                        <img src="/assets/images/abacus2nobg.png">
+                    </div>
+                    
+                </div>
+
+        </div>  <!--Header container closing tag-->
+     
+
+    <div class="app" id="land-point">
+        <h1 id="quiz-title"></h1>
+        <div class="quiz">
+            
+            <h2 id="question">Question goes here</h2>
+      
+                <div class="completion-messages">
+                <h3 id="score-show"></h3>
+                <h3 id="score-message"></h3>
+                </div>
+         
+            <div id="answer-buttons">
+                <button class="btn" id="quiz-btn">Answer 1</button>
+                <button class="btn" id="quiz-btn">Answer 2</button>
+                <button class="btn" id="quiz-btn">Answer 3</button>
+                <button class="btn" id="quiz-btn">Answer 4</button>
+            </div>
+
+            <button  id="next-btn">Next</button>
+
+            <div id="ext-rstrt">
+                <button id="exit-btn">Exit</button>
+
+                <button  id="restart-btn">Restart</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/babel" src="/assets/js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+    <script src="/assets/js/treelist.js"></script>
+    <script src="/assets/js/quizpage.js"></script>
+</body>
+</html>

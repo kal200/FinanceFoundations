@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/images/faviconblue.png">
+    <title>Calculators</title>
+     <link rel="stylesheet" href="/assets/css/calculatorscommon.css">
+     <link rel="stylesheet" href="/assets/css/styles.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar-container" id="calculator-navbar"></div>
+    </header>
+
+    <!--TABLINKS-->
+    <div class="tab">
+        <button class="tablinks active" onclick="openCalc('compound-calc')" id="default-open">Compound Interest Calculator</button>
+        <button class="tablinks" onclick="openCalc('mortgage-calc')">Mortgage Calculator</button>
+        <button class="tablinks" onclick="openCalc('loan-calc')">Loan Calculator</button>
+    </div>
+
+    <!-- TAB CONTENT-->
+     <div id="compound-calc" class="tabcontent">
+        <div class="compound-calculator">
+            <div class="com-left">
+                <h2>Compound Interest Calculator</h2>
+
+                <!--Compound Interest Inputs-->
+                <form action="#" id="compoundform">
+                    <div class="cgroup">
+                        <div class="title">Initial Deposit</div>
+                        <div class="inputwrapper">
+                        <input type="text" value="500" class="initial-deposit">
+                        </div>
+                    </div>
+
+                    <div class="cgroup">
+                        <div class="title">Estimated Rate of Return (%)</div>
+                        <input type="text" value="5" class="est-ror">
+                    </div>
+
+                    <div class="cgroup">
+                        <div class="title">Years Saving</div>
+                        <input type="text" value="10" class="years-save">
+                    </div>
+
+                    <div class="cgroup">
+                        <div class="title">Additional Contribution Amount</div>
+                        <input type="text" value="10" class="addtl-cont">
+                    </div>
+
+                    <div class="cgroup">
+                        <label for="contfreq">Contribution Frequency</label>
+                        <select name="contfreq" id="contfreq">
+                            <option value="contweekly">Weekly</option>
+                            <option value="contmonthly">Monthly</option>
+                            <option value="contannually">Annually</option>
+                        </select>
+                    </div>
+
+                    
+                    <div class="cgroup">
+                        <label for="compfreq">Compounding Frequency</label>
+                        <select name="compfreq" id="compfreq">
+                            <option value="compannually">Annually</option>
+                            <option value="compmonthly">Monthly</option>
+                        </select>
+                    </div>
+
+                </form>
+
+                <button class="compcalcbtn" onclick="compoundInit()">Calculate</button>
+
+            </div>
+
+
+            <div class="result-chart">
+                <canvas id="compoundChart" width="400" height="400"></canvas>
+            </div>
+
+            
+                <div class="result-right">
+                    <div class="future-value" id="output-group">
+                        <h3>Future Value</h3>
+                        <div class="cvalue">1342</div>
+
+                    </div>
+
+                    <div class="total-contributed" id="output-group">
+                        <h3>Total Contribution</h3>
+                        <div class="cvalue">2343</div>
+                    </div>
+
+                    <div class="interest-total" id="output-group">
+                        <h3>Total Interest Earned</h3>
+                        <div class="cvalue">2334</div>
+                    </div>
+                   
+                </div>
+
+                
+            
+                
+
+        </div>
+     </div>
+
+     <div id="mortgage-calc" class="tabcontent">
+        <div class="mortgage-calculator">
+            <div class="mor-left">
+                <h2>Mortgage Calculator</h2>
+                <form action="#">
+
+                    <div class="mgroup">
+                        <div class="mtitle">Home Price</div>
+                        <input type="text" value="400000" class="home-price">
+                    </div>
+
+                    <div class="mgroup">
+                        <div class="mtitle">Down Payment (20%)</div>
+                        <input type="text" value="60000" class="down-pay">
+                    </div>
+                    
+                    <div class="mgroup">
+                        <div class="mtitle">Loan Term (years)</div>
+                        <input type="text" value="10" class="m-term">
+                    </div>
+
+                    <div class="mgroup">
+                        <div class="mtitle">Interest Rate (%)</div>
+                        <input type="text" value="5" class="m-interest">
+                    </div>
+
+                </form>
+
+                <button class="mcalcbtn" onclick="mortgageInit()">Calculate</button>
+
+            </div>
+
+            <div class="mor-resultchart">
+                <canvas id="mortgageChart" width="400" height="400"></canvas>
+            </div>
+
+            
+                <div class="mor-right">
+                    <div class="total-monthly" id="output-group">
+                        <h3>Monthly Payment</h3>
+                        <div class="mvalue">12432</div>
+                    </div>
+
+                    <div class="principal-monthly" id="output-group">
+                        <h3>Principal</h3>
+                        <div class="mvalue">3452</div>
+                    </div>
+
+                    <div class="interest-monthly" id="output-group">
+                        <h3>Interest</h3>
+                        <div class="mvalue">3452</div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+        </div>
+     </div>
+
+     <div id="loan-calc" class="tabcontent">
+        <div class="loan-calculator">
+
+            <div class="top">
+                <h2>Loan Calculator</h2>
+                <form action="#">
+
+                    <div class="group">
+                        <div class="title">Loan Amount</div>
+                        <input type="text" value="20000" class="loan-amount">
+                    </div>
+
+                    <div class="group">
+                        <div class="title">Interest Rate (%)</div>
+                        <input type="text" value="5.0" class="interest-rate">
+                    </div>
+
+                    <div class="group">
+                        <div class="group">Term Length (Months)</div>
+                        <input type="text" value="60" class="loan-term">
+                    </div>
+
+                </form>
+
+                <button class="calcbtn" onclick="loanInit()">Calculate</button>
+
+            </div>
+
+
+            <div class="loan-resultchart">
+                <canvas id="loanChart" width="400" height="400"></canvas>
+            </div>
+            
+
+                <div class="lright">
+                    <div class="loanemi" id="output-group">
+                        <h3>Loan EMI (Equated Monthly Installment)</h3>
+                        <div class="value">5000</div>
+                    </div>
+
+                    <div class="totalamount" id="output-group">
+                        <h3>Total Amount of Loan</h3>
+                        <div class="value">25000</div>
+                    </div>
+
+                    <div class="totalinterest" id="output-group">
+                        <h3>Total Interest</h3>
+                        <div class="value">3500</div>
+                    </div>
+                    
+                    
+
+                </div>       
+                
+            
+        </div>
+        
+     </div>
+
+     
+    <script type="text/babel" src="/assets/js/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/calculators.js">
+    
+          //will open tab with this id by default when page is loaded
+    </script>
+</body>
+</html>

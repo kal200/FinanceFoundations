@@ -1,0 +1,303 @@
+:root{
+  --maincolor: #64bcf4;
+  --hovercolor: #5bacdf;
+  --backgroundcolor: #f1f8fc;
+  --buttontextcolor: #bee6ff;
+  --linkandtextcolor: #074368; 
+  --linechartcolor: #4eaae3;
+}
+
+
+.aldrich-regular {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+  background-color: var(--backgroundcolor);
+}
+
+#calculator-navbar{
+  margin: 15px 0px 10px 0px;
+}
+
+/*General tab styling*/
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: var(--backgroundcolor);
+    border-radius: 5px;
+    padding: 5px round;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-weight: 900;
+    background-color: #ebf4f9;
+    color: var(--hovercolor);
+  }
+
+  .tab button:hover {
+    background-color: #17233d;
+   
+  }
+
+  .tab button:active {
+    background-color: #39548e;
+   
+  }
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+    border-top: none;
+    width: 100%;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    box-sizing: content-box;
+    margin-left: 20px;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  }
+
+  .compound-calculator {
+    display: flex;
+    flex-direction: row; /* Ensures elements are in a row */
+    justify-content: space-between; /* Distributes space between elements */
+    align-items: flex-start; /* Aligns items to the start of the container */
+    gap: 20px;
+    background-color: var(--backgroundcolor);
+    border: 1px solid #14213d;
+    border-radius: 10px;
+    padding: 10px;
+    width: 97.5%;
+    font-family: 'Aldrich', sans-serif; 
+}
+
+.compound-calculator .result-right{
+  flex: 1;
+  
+}
+
+.compound-calculator .result-right .cvalue{
+  color: #4eaae3;
+  font-weight: 800;
+}
+
+#output-group{
+  margin-bottom: 25px;
+}
+
+ .compound-calculator form input {
+  border-radius: 10px;
+  background-color: #c3f8ffbd;
+  color: var(--linkandtextcolor);
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.compound-calculator .result-chart {
+  flex: 1;
+  margin-right: 45px;
+}
+
+.compound-calculator .com-left {
+  flex: 1;
+}
+
+h2{
+  color: var(--linkandtextcolor);
+  margin-bottom: 5px;
+}
+
+.compound-calculator .compcalcbtn{
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: var(--linkandtextcolor);
+  color: var(--buttontextcolor);
+  border-radius: 10px;
+  margin-top: 8px;
+  font-size: large;
+  font-family: 'Aldrich', sans-serif; 
+}
+
+.cgroup, .mgroup, .group{
+  margin-bottom: 8px;
+}
+
+.compound-calculator .cgroup .title{
+  border-radius: 8px;
+  font-weight: bold;
+  color: var(--linkandtextcolor);
+  margin-bottom: 3px;
+}
+
+.compound-calculator .result-right h3{
+  color: var(--linkandtextcolor);
+}
+
+.compound-calculator .cgroup label, select{
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.compound-calculator .cgroup select, option, option{
+  border-radius: 8px;
+  background-color: var(--backgroundcolor);
+  font-weight: bold;
+}
+
+.compound-calculator .future-value .cvalue::before, 
+.total-contributed .cvalue::before, 
+.interest-total .cvalue::before {
+  content: '$';
+}
+
+
+/*MORTGAGE CALCULATOR STYLING*/
+.mortgage-calculator {
+  display: flex;
+  flex-direction: row; /* Ensures elements are in a row */
+  justify-content: space-between; /* Distributes space between elements */
+  align-items: flex-start; /* Aligns items to the start of the container */
+  gap: 20px;
+  background-color: var(--backgroundcolor);
+  border: 1px solid #14213d;
+  border-radius: 10px;
+  padding: 10px;
+  width: 97.5%;
+  font-family: 'Aldrich', sans-serif; 
+}
+
+.mortgage-calculator .mor-right{
+  flex: 1;
+}
+
+.mortgage-calculator .mor-right h3{
+  color: var(--linkandtextcolor);
+}
+
+.mortgage-calculator .mor-right .mvalue, .mvalue::before{
+  color: var(--linechartcolor);
+  content: '$';
+  font-weight: 800;
+}
+
+.mortgage-calculator .mor-resultchart {
+  flex: 1;
+  margin-right: 65px;
+
+}
+
+.mortgage-calculator .mor-left {
+  flex: 1;
+}
+
+
+.mortgage-calculator form input {
+  border-radius: 10px;
+  background-color: #c3f8ffbd;
+  color: var(--linkandtextcolor);
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.mortgage-calculator .mcalcbtn{
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: var(--linkandtextcolor);
+  color: var(--buttontextcolor);
+  border-radius: 10px;
+  margin-top: 14px;
+  font-size: large;
+  font-family: 'Aldrich', sans-serif; 
+}
+
+.mortgage-calculator .mgroup .mtitle{
+  border-radius: 8px;
+  font-weight: bold;
+  color: var(--linkandtextcolor);
+  margin-bottom: 3px;
+}
+
+/* LOAN CALCULATOR STYLING */
+.loan-calculator {
+  display: flex;
+  flex-direction: row; /* Ensures elements are in a row */
+  justify-content: space-between; /* Distributes space between elements */
+  align-items: flex-start; /* Aligns items to the start of the container */
+  gap: 20px;
+  background-color: var(--backgroundcolor);
+  border: 1px solid #14213d;
+  border-radius: 10px;
+  padding: 10px;
+  width: 97.5%;
+  font-family: 'Aldrich', sans-serif; 
+}
+
+.loan-calculator .lright{
+  flex: 1;
+}
+
+.loan-calculator .lright .value, .value::before{
+  color: var(--linechartcolor);
+  content: '$';
+  font-weight: 800;
+}
+
+.loan-calculator .loan-resultchart {
+  flex: 1;
+  margin-right: 65px;
+
+}
+
+.loan-calculator .top {
+  flex: 1;
+}
+
+.loan-calculator form input {
+  border-radius: 10px;
+  background-color: #c3f8ffbd;
+  color: var(--linkandtextcolor);
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.loan-calculator .calcbtn{
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: var(--linkandtextcolor);
+  color: var(--buttontextcolor);
+  border-radius: 10px;
+  margin-top: 14px;
+  font-size: large;
+  font-family: 'Aldrich', sans-serif; 
+}
+
+.lright h3{
+  color: var(--linkandtextcolor);
+  margin-bottom: 3px;
+}
+
+.group .title{
+  color: var(--linkandtextcolor);
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
