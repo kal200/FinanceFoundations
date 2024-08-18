@@ -6,7 +6,7 @@ class Navbar extends React.Component {
         <header>
           <div className="container">
             <div className="logo">
-              <a href="/pages/index.html" target="_self">
+              <a href="/index.html" target="_self">
                 <img src="/assets/images/gradientfinancelogonobgresized.png" alt="logo" />
               </a>
             </div>
