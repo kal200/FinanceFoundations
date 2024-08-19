@@ -15,8 +15,12 @@
 }
 
 #definitions-navbar{
-    margin: 15px 0px 5px 0px;
-    padding-bottom: 0px;
+    position: relative;
+    background-color: var(--backgroundcolor);
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
     z-index: 10;
       
 }
