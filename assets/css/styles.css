@@ -169,7 +169,7 @@ header .container{
     
     background-color: red;
 
-    background-image: url(/FinanceFoundations/assets/images/bullvsbearsecondland.jpg);
+    background-image: url(https://kal200.github.io/FinanceFoundations/assets/images/bullvsbearsecondland.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -352,7 +352,7 @@ header .container{
     min-height: 100vh;
     background-color: var(--backgroundcolor);
 
-    background-image: url(/FinanceFoundations/assets/images/block3bgtest2.jpg);
+    background-image: url(https://kal200.github.io/FinanceFoundations/assets/images/block3bgtest2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
