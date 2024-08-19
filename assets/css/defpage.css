@@ -21,7 +21,7 @@ header{
     padding-top: 10%;
     z-index: 10;
     position: relative;
-    
+    background-color: var(--backgroundcolor);
     max-width: 100%;
     width: 100%;
     
