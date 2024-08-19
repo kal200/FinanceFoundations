@@ -17,6 +17,7 @@
 #definitions-navbar{
     margin: 15px 0px 5px 0px;
     padding-bottom: 0px;
+    z-index: 10;
       
 }
 
