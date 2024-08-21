@@ -377,6 +377,7 @@ header .container{
     border-radius: 4px;
     padding: 5px 6px;
     border: solid 2px hsla(202, 65%, 97%, 0.95);
+    margin-bottom: 3%;
   
 }
 
@@ -416,7 +417,7 @@ ul{
 }
 
 .back-to-top{
-    margin-top: 3%;
+    
     margin-left: 6%;
 }
 
